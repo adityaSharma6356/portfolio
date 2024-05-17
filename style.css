@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: none;
+    height: 100vh;
+    background-image: url('https://c1.wallpaperflare.com/preview/742/346/328/pattern-wood-retro-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circle {
+    --circle-size: 80px;
+    position: fixed;
+    height: var(--circle-size);
+    width: var(--circle-size);
+    top: calc(var(--circle-size) / 2 * -1);
+    left: calc(var(--circle-size) / 2 * -1);
+    pointer-events: none;
+    z-index: 1000;
+    filter: drop-shadow(1px 1px 10px #222);
+  }
+.dot {
+    position: fixed;
+    width: 5px;
+    height:5px;
+    border-radius: 50%;
+    background-color: gray;
+    z-index: 900;
+}
+.finger {
+    --circle-size: 50px;
+    position: fixed;
+    height: var(--circle-size);
+    width: var(--circle-size);
+    pointer-events: none;
+    z-index: 1000;
+    left: -20px;
+    top: -10px;
+    /* transition-duration: 1s; */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.laptop {
+    width: 60vw;
+    height: 40vw;
+    position: fixed;
+    z-index: 200;
+    transform: translateY(-500px)  rotate(-15deg);
+    background-color: rgb(48, 48, 48);
+    border-radius: 2vw;
+    box-shadow:1px 1px 20px black;  
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+
+.trackpad {
+    width: 30%;
+    height: 30%;
+    background-color: rgb(35, 35, 35);
+    position: absolute;
+    left: 20%;
+    border: 2px solid rgb(70, 70, 70);
+    bottom: 5%;
+    border-radius: 1vw;
+}
+
+.keyboard {
+    position: absolute;
+    width: 95%;
+    height: 60%;
+    top: 2.5%;
+    left: 2.5%;
+    border-radius: 1vw;
+    background-color: rgb(41, 41, 41);
+}
+
+.bottomkeys{
+    position: absolute;
+    bottom: 5%;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.bottomkeys2{
+    position: absolute;
+    bottom: 22%;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.bottomkeys3{
+    position: absolute;
+    bottom: 40%;
+    height: 15%;
+    width: 80%;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.bottomkeys4{
+    position: absolute;
+    bottom: 58%;
+    height: 15%;
+    width: 80%;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.bottomkeys5{
+    position: absolute;
+    bottom: 77%;
+    height: 15%;
+    width: 80%;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.display{
+    height: 10%;
+    width: 100%;
+    top: -12%;
+    position: absolute;
+    background-color: rgb(48, 48, 48);
+    border-radius: 1vw;
+    display: block;
+    border-top: 20px solid rgb(70, 70, 70) ;
+}
+.screen {
+    left: 2.5%;
+    position: relative;
+    height: 100%;
+    width: 95%;
+    transform: scale(1,0.5);
+}
+
+.win{
+    
+    position: relative;
+    top: 25%;
+    left: 25%;
+    filter: invert(83%) sepia(34%) saturate(220%) hue-rotate(355deg) brightness(107%) contrast(93%);
+    height: 50%;
+}
+.but {
+    background-color: rgb(35, 35, 35);
+    height: 100%;
+    aspect-ratio: 1;
+    margin-left: 1%;
+    color: rgb(246, 232, 193);
+    font-family: monospace;
+    text-align: center start;
+    border-radius: 10%;
+}
+.but:active {
+    background-color: rgb(53, 53, 53);
+}
+.space {
+    background-color: rgb(35, 35, 35);
+    height: 100%;
+    width: 30%;
+    margin-left: 1%;
+    font-family: monospace;
+    text-align: center start;
+    border-radius: 5px;
+}
+.space:active {
+    background-color: rgb(53, 53, 53);
+}
+p {
+    margin-left: 10px;
+    font-size: 1vw;
+}
+
+
+.file {
+    position: fixed;
+    height: 100vh;
+    aspect-ratio: 0.8;
+    transform:translate(-200px) rotate(5deg);
+    z-index: 201;
+    background: linear-gradient(90deg, rgba(117,92,46,1) 0%, rgba(248,199,108,1) 100%); 
+    box-shadow:1px 1px 20px black;  
+    border-radius: 5vh;
+}
+
+.clip {
+    position: absolute;
+    width: 10%;
+    left: 10%;
+    filter: drop-shadow(0px 0px 2px #222);
+}
+.resume {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    transform: rotate(3deg);
+    background-color: wheat;
+    box-shadow:0px 0px 3px black;
+    font-family: monospace;
+    color: rgb(102, 91, 71);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    align-items: center;
+    margin-right: 10%;
+}
+.info {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.page {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    transform: rotate(-2deg);
+    background-color: rgb(227, 205, 163);
+    box-shadow:0px 0px 3px black;
+}
+
+.exp {
+    border: 2px solid rgb(102, 91, 71);
+    padding: 10px;
+}
+
+.title {
+    color: rgb(189, 54, 41);
+}
+
+
+.externallink {
+    width: 4vh;
+    aspect-ratio: 1;
+    margin-left: 20px;
+}
+
+.filecover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    transform: translateX(100%) ;
+}
+
+.openstate{
+    animation: openstate 1s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes openstate {
+    to {
+        transform:translateX(0%) rotateY(180deg);
+    }
+}
+.closestate{
+    animation: closestate 1s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes closestate {
+    to {
+        transform:translateX(100%) rotateY(0deg);
+    }
+}
+
+
+
+.filecover2 {
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    top: 15%;
+    background: linear-gradient(90deg, rgba(117,92,46,1) 0%, rgba(248,199,108,1) 100%); 
+    border-radius: 0 5vh  5vh  5vh;
+    box-shadow:0px 0px 3px black;
+}
+
+.openfile{
+    rotate: -90deg;
+    height: 10%;
+    aspect-ratio: 3;
+    background-color: transparent;
+    border: 3px dashed gray;
+    position: absolute;
+    right: -10%;
+    top: 30%;
+    font-size: 5vh;
+    color: gray;
+}
+
+
+
+.mobile {
+    position: fixed;
+    height: 75vh;
+    aspect-ratio: 0.55;
+    transform:translate(1200px) rotate(-2deg);
+    z-index: 201;
+    background: linear-gradient(90deg, rgb(90, 86, 79) 0%, rgb(179, 164, 136) 100%); 
+    box-shadow:1px 1px 20px black;  
+    border-radius: 5px;
+}
+
+.bezels{
+    position: absolute;
+    left: 0.5vh;
+    top: 1vh;
+    height: 73vh;
+    aspect-ratio: 0.55;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+.screenx{
+    position: absolute;
+    left: 0.5vh;
+    top: 1vh;
+    height: 71vh;
+    aspect-ratio: 0.55;
+    background-image: url('https://wallpapers.com/images/featured/samsung-mobile-crm5wyehou8avvmz.jpg');
+    border-radius: 5px;
+}
+
+.camera{
+    position: absolute;
+    left: calc(50% - 1vh);
+    height: 2vh;
+    aspect-ratio: 1;
+    top: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+.nav{
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    justify-content: space-evenly;
+    
+}
+.menuicons{
+    height: 100%;
+    aspect-ratio: 1;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
+}
+
+.apps {
+    transform: translateY(20px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust gap as needed */
+    margin: 5%;
+}
+
+.app {
+    display: block;
+    position: relative;
+    height: 8vh;
+    aspect-ratio: 1;
+    margin: auto;
+    border-radius: 5px; /* Adjust radius as needed */
+    background-color: #00000000; /* For visual reference, adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /* Adjust text size as needed */
+    color: #333; /* Adjust text color as needed */
+}
