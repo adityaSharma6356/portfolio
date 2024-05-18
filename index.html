@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    </head>
 <body>
     <img class="circle" src="resource/plane.webp"></div>
     <img class="finger" src="resource/finger.png"></div>
@@ -53,7 +54,8 @@
     <div class="dot dot39"></div>
     <div class="dot dot40"></div>
     
-    <div class="laptop draggable">
+    <div class="laptop">
+        <audio class="music" src="resource/Buckshot_Roulette_OST_muffled_in_game_version_nevqeQ9APVo_140.mp3"></audio>
         <div class="display">
             <img src="resource/image.png" alt="" class="screen">
         </div>
@@ -125,12 +127,20 @@
                 <div class="but "><p unselectable="on">Fn</p></div>
                 <div class="but winbox"><img src="resource/windows-icon.png" alt="" class="win"></div>
                 <div class="but"><p unselectable="on">Alt</p></div>
-                <div class="space"></div>
+                <div class="space" onclick="playmusic()"></div>
                 <div class="but"><p unselectable="on">Alt</p></div>
                 <div class="but"><p unselectable="on">Ctrl</p></div>
                 <div class="but"><p unselectable="on">←</p></div>
                 <div class="but"><p unselectable="on">↓</p></div>
                 <div class="but"><p unselectable="on">→</p></div>
+            </div>
+        </div>
+        <div class="note" >
+            <p class='donetechs'>html, css, javascript</p>
+            <p class='donetechs'>React</p>
+            <p class='donetechs'>Android, Jetpack Compose</p>
+            <div style="margin: 10%;border: 2px solid gray;border-radius: 60%;">
+                <p >Flutter</p>
             </div>
         </div>
     </div>
@@ -140,37 +150,37 @@
         <div class="page"></div>
         <div class="resume">
             <div class="row">
-                <h1 class="name"style="font-size: 4vh;">Aditya Sharma</h1>
-                <h1 class="title" style="font-size: 5vh;">RESUME</h1>
+                <h1 class="name"style="font-size: 2vw;">Aditya Sharma</h1>
+                <h1 class="title" style="font-size: 2.5vw;">RESUME</h1>
             </div>
             <div class="info" style="display: flex;align-items: center;">
-                <h1 class="job" style="font-size: 2vh;">Android | Mobile Developer</h1>
+                <h1 class="job" style="font-size: 1vw;">Android | Mobile Developer</h1>
                 <a href="https://www.linkedin.com/in/aditya-sharma-a3ba84277/" target="_blank"><img src="resource/linkedin.png" alt="" class="externallink" ></a>
                 <a href="https://github.com/adityaSharma6356" target="_blank"><img src="resource/github.png" alt="" class="externallink"></a>
                 
                 
             </div>
             <div class="info">
-                <h1 class="job" style="font-size: 3vh;">Experience:</h1>
+                <h1 class="job" style="font-size: 1.5vw;">Experience:</h1>
             </div>
             <div class="info exp">
-                <h1 class="job" style="font-size: 2.5vh;">Android Developer Intern @PinkMoon Apps</h1>
-                <h1 class="job" style="font-size: 2vh;">-Responsible for about 80% UI in JetpackCompose</h1>
-                <h1 class="job" style="font-size: 2vh;">-Created some core App features</h1>
-                <h1 class="job" style="font-size: 2vh;">-Worked on Api Integration and data flow from backend to application</h1>
+                <h1 class="job" style="font-size: 1.3vw;">Android Developer Intern @PinkMoon Apps</h1>
+                <h1 class="job" style="font-size: 1vw;">-Responsible for about 80% UI in JetpackCompose</h1>
+                <h1 class="job" style="font-size: 1vw;">-Created some core App features</h1>
+                <h1 class="job" style="font-size: 1vw;">-Worked on Api Integration and data flow from backend to application</h1>
             </div>
             <div class="info">
-                <h1 class="job" style="font-size: 3vh;">Projects:</h1>
-                <h1 class="job" style="font-size: 2vh;">[SHOWN IN THE MOBILE PHONE]</h1>
+                <h1 class="job" style="font-size: 1.5vw;">Projects:</h1>
+                <h1 class="job" style="font-size: 1vw;">[SHOWN IN THE MOBILE PHONE]</h1>
             </div>
             <div class="info">
-                <h1 class="job" style="font-size: 3vh;">Tech Stack:</h1>
-                <h1 class="job" style="font-size: 2vh;">Android, Kotlin, Jetpack Compose, React, JavaScript, Java, C++, DSA</h1>
+                <h1 class="job" style="font-size: 1.3vw;">Tech Stack:</h1>
+                <h1 class="job" style="font-size: 1vw;">Android, Kotlin, Jetpack Compose, React, JavaScript, Java, C++, DSA</h1>
             </div>
             <div class="info">
-                <h1 class="job" style="font-size: 3vh;">Specials:</h1>
-                <h1 class="job" style="font-size: 2vh;">-1+ Years of experience in making Android Apps</h1>
-                <h1 class="job" style="font-size: 2vh;">-Specialising in Jetpack Compose and UI creation with advanced knowledge of creating Custom Components</h1>
+                <h1 class="job" style="font-size: 1.3vw;">Specials:</h1>
+                <h1 class="job" style="font-size: 1vw;">-1+ Years of experience in making Android Apps</h1>
+                <h1 class="job" style="font-size: 1vw;">-Specialising in Jetpack Compose and UI creation with advanced knowledge of creating Custom Components</h1>
             </div>
         </div>
         <img src="resource/paper_clip.png" alt="" class="clip">
@@ -187,21 +197,39 @@
             <div class="screenx">
                 <div class="camera"></div>
                 <div class="apps">
-                    <img src="resource/Screenshot 2024-05-14 184815.png" alt="" class="app">
-                    <a href="https://github.com/adityaSharma6356/ToonScrape"target="_blank"><img src="resource/toonscrape.png" alt="" class="app"></a>
-                    <!-- <img src="resource/Screenshot 2024-05-14 184829.png" alt="" class="app"> -->
+                    <a href="">
+                        <img src="resource/Screenshot 2024-05-14 184815.png" alt="" class="app">
+                        <p class="appname">UnSpoken</p>
+
+                    </a>
+                    <a href="https://github.com/adityaSharma6356/ToonScrape"target="_blank"><img src="resource/toonscrape.png" alt="" class="app">
+                    <p class="appname">ToonScrape</p>
+                </a>
+                <!-- <img src="resource/Screenshot 2024-05-14 184829.png" alt="" class="app"> -->
                     <a href="https://github.com/adityaSharma6356/music-streaming-app"target="_blank">
-                        <img src="resource/music_player.png" alt="" class="app">
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.meera.app.android&hl=en_IN&gl=US"target="_blank">
-                        <img src="resource/Screenshot 2024-05-14 184840.png" alt="" class="app">
-
-                    </a>
-                    <a href="https://github.com/adityaSharma6356/IdeaBox/tree/master/app/src/main/res/drawable" class="" target="_blank">
-                        <img src="resource/ideabox_logo.png" alt="" class="app">
-
-                    </a>
+                    <img src="resource/music_player.png" alt="" class="app">
+                    <p class="appname">MusicPlayer</p>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.meera.app.android&hl=en_IN&gl=US"target="_blank">
+                    <img src="resource/meera.png" alt="" class="app">
+                    <p class="appname">Meera</p>
+                    
+                </a>
+                <a href="https://github.com/adityaSharma6356/IdeaBox" class="" target="_blank">
+                    <img src="resource/ideabox_logo.png" alt="" class="app">
+                    <p class="appname">ideaBox</p>
+                    
+                </a>
+                <div>
                     <img src="resource/plane.webp" alt="" class="app" onclick="toggleplane()">
+                    <p class="appname">PlaneMode</p>
+                    
+                </div>
+                <a href="https://drive.google.com/file/d/1BwjX1Y5o939nwzSz9RPta86F-9ar_Wv6/view?usp=sharing" target="_blank">
+                    <img src="resource/pdf.png" alt="" class="app">
+                    <p class="appname">Resume</p>
+                    
+                </a>
                 </div>
                 <div class="nav">
                     <div class="menu"><img src="resource/menu.png" alt="" class="menuicons"></div>
@@ -276,15 +304,42 @@
         var mouseIsOverMobile = false;
         let enableplane = false;
         window.addEventListener('mousemove', (e) => {
-        mouse.x = e.x;
-        mouse.y = e.y;
+            mouse.x = e.x;
+            mouse.y = e.y;
         });
+
+        let lrec = laptop.getBoundingClientRect()
+        lappy.x = lrec.left
+        lappy.y = lrec.top
+        lrec = file.getBoundingClientRect()
+        console.log(filepos.x)
+        console.log(filepos.y)
+        filepos.x = lrec.left
+        filepos.y = lrec.top
+        console.log(filepos.x)
+        console.log(filepos.y)
+        lrec = mobile.getBoundingClientRect()
+        mobilepos.x = lrec.left
+        mobilepos.y = lrec.top
         let trailspeed = 0
-        const speed = 0.1;
+        let speed = 0.1;
         const angleTransitionSpeed = 0.1;
         let targetAngle = 0;
         let fileopen = false
         let highestzindex = 200
+        let playing  = false
+        function playmusic(){
+            let audio = document.querySelector('.music')
+            if(playing)
+            {
+                playing = false
+                audio.pause()
+            } else {
+                audio.load()
+                audio.play()
+                playing = true
+            }    
+        }
 
         function toggleplane(){
             if(enableplane){
@@ -387,6 +442,8 @@
         }
 
 
+
+
         function setZIndex(name){
             highestzindex++
             document.querySelector(name).style.zIndex = `${highestzindex}`
@@ -397,17 +454,21 @@
                 if(mouseIsOver){
                     laptop.style.boxShadow = "1px 1px 50px black";  
                     setZIndex('.laptop')
+                    speed = 1
                 }
                 if(mouseIsOverFile){
                     file.style.boxShadow = "1px 1px 50px black";  
                     setZIndex('.file')
+                    speed = 1
                 }
                 if(mouseIsOverMobile){
                     mobile.style.boxShadow = "1px 1px 50px black";  
                     setZIndex('.mobile')
+                    speed = 1
                 }
-        });
+            });
             window.addEventListener('mouseup', function() {
+                speed = 0.1
                 mouseIsDown = false;
                 laptop.style.boxShadow =  "1px 1px 20px black";
                 file.style.boxShadow =  "1px 1px 20px black";

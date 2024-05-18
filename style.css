@@ -48,7 +48,7 @@ body {
     height: 40vw;
     position: fixed;
     z-index: 200;
-    transform: translateY(-500px)  rotate(-15deg);
+    transform: translateY(-50%)  rotate(-15deg);
     background-color: rgb(48, 48, 48);
     border-radius: 2vw;
     box-shadow:1px 1px 20px black;  
@@ -56,6 +56,24 @@ body {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+.note{
+    position: absolute;
+    bottom: -10%;
+    transform: rotate(20deg);
+    height: 35%;
+    aspect-ratio: 1;
+    background-color: gold;
+    box-shadow:0px 0px 10px black;  
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.donetechs {
+    text-decoration: line-through;
 }
 
 
@@ -179,13 +197,13 @@ p {
 
 .file {
     position: fixed;
-    height: 100vh;
+    width: 40vw;
     aspect-ratio: 0.8;
-    transform:translate(-200px) rotate(5deg);
+    transform:translate(50%) rotate(5deg);
     z-index: 201;
     background: linear-gradient(90deg, rgba(117,92,46,1) 0%, rgba(248,199,108,1) 100%); 
     box-shadow:1px 1px 20px black;  
-    border-radius: 5vh;
+    border-radius: 2vw;
 }
 
 .clip {
@@ -239,7 +257,7 @@ p {
 
 
 .externallink {
-    width: 4vh;
+    width: 2vw;
     aspect-ratio: 1;
     margin-left: 20px;
 }
@@ -279,7 +297,7 @@ p {
     width: 100%;
     top: 15%;
     background: linear-gradient(90deg, rgba(117,92,46,1) 0%, rgba(248,199,108,1) 100%); 
-    border-radius: 0 5vh  5vh  5vh;
+    border-radius: 0 2vw  2vw  2vw;
     box-shadow:0px 0px 3px black;
 }
 
@@ -292,7 +310,7 @@ p {
     position: absolute;
     right: -10%;
     top: 30%;
-    font-size: 5vh;
+    font-size: 2vw;
     color: gray;
 }
 
@@ -300,9 +318,9 @@ p {
 
 .mobile {
     position: fixed;
-    height: 75vh;
+    height: 30vw;
     aspect-ratio: 0.55;
-    transform:translate(1200px) rotate(-2deg);
+    transform:translateX(400%) rotate(-2deg);
     z-index: 201;
     background: linear-gradient(90deg, rgb(90, 86, 79) 0%, rgb(179, 164, 136) 100%); 
     box-shadow:1px 1px 20px black;  
@@ -311,10 +329,10 @@ p {
 
 .bezels{
     position: absolute;
-    left: 0.5vh;
-    top: 1vh;
-    height: 73vh;
-    aspect-ratio: 0.55;
+    left: 0.5vw;
+    top: 0.5vw;
+    height: 29vw;
+    aspect-ratio: 0.54;
     background-color: black;
     border-radius: 5px;
 }
@@ -322,18 +340,19 @@ p {
 
 .screenx{
     position: absolute;
-    left: 0.5vh;
-    top: 1vh;
-    height: 71vh;
-    aspect-ratio: 0.55;
+    left: 0.5vw;
+    top: 0.5vw;
+    height: 28vw;
+    aspect-ratio: 0.52;
     background-image: url('https://wallpapers.com/images/featured/samsung-mobile-crm5wyehou8avvmz.jpg');
+    background-size: cover;
     border-radius: 5px;
 }
 
 .camera{
     position: absolute;
-    left: calc(50% - 1vh);
-    height: 2vh;
+    left: calc(50% - 0.5vw);
+    height: 1vw;
     aspect-ratio: 1;
     top: 10px;
     border-radius: 50%;
@@ -368,7 +387,7 @@ p {
 .app {
     display: block;
     position: relative;
-    height: 8vh;
+    height: 3vw;
     aspect-ratio: 1;
     margin: auto;
     border-radius: 5px; /* Adjust radius as needed */
@@ -378,4 +397,12 @@ p {
     align-items: center;
     font-size: 1rem; /* Adjust text size as needed */
     color: #333; /* Adjust text color as needed */
+    text-align: center;
+}
+
+.appname {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7vw;
+    text-align: center;
 }
